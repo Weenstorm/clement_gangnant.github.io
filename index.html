@@ -211,6 +211,41 @@
             margin-top: 2rem;
         }
 
+        .hobbies {
+            background: var(--light);
+        }
+
+        .hobbies-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .hobby-item {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+
+        .hobby-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .hobby-item h3 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .hobby-icon {
+            font-size: 1.5rem;
+        }
+
         @media (max-width: 768px) {
             .about {
                 grid-template-columns: 1fr;
@@ -241,7 +276,7 @@
             <li><a href="#experience">Experience</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
-            <!-- <li><a href="#contact">Contact</a></li> -->
+            <li><a href="#hobbies">Hobbies</a></li>
         </ul>
     </nav>
 
@@ -249,9 +284,9 @@
         <img src="pdp2.jpg" alt="Profile Photo" class="profile-img">
         <div>
             <h2>About Me</h2>
-            <p>I went to San Francisco in 2022 for six months to study Computer Science at SFSU.</p>
-            <p>I scored 950 on the TOEIC.</p>
-            <p>Raid-leader of a 25-man guild in World of Warcraft</p>
+            <p>I'm a 23-year-old student in the Management major (GITM) at EPITA Engineering School in Paris, specializing in Information Technology Management. My academic journey has been enriched by a significant international experience when I studied Computer Science at San Francisco State University (SFSU) for six months in 2022.</p>
+            <p>With a strong command of English, demonstrated by a TOEIC score of 950, I combine technical skills with natural leadership abilities. These skills are demonstrated through my early experiences as an eldest sibling, where I developed strong mentoring and guidance capabilities.</p>
+            <p>My academic background, starting with a Scientific Baccalaureate in Engineering Sciences, coupled with real-world experience at McDonald's, has given me a unique perspective on both technical and managerial aspects of business operations.</p>
         </div>
     </section>
 
@@ -374,15 +409,39 @@
         </div>
     </section>
 
-    <!-- <section id="contact">
-        <h2>Contact Me</h2>
-        <form class="contact-form">
-            <input type="text" placeholder="Name" required>
-            <input type="email" placeholder="Email" required>
-            <textarea placeholder="Message" rows="5" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </section> -->
+    <section id="hobbies" class="hobbies">
+        <h2>Hobbies</h2>
+        <div class="hobbies-grid">
+            <div class="hobby-item">
+                <h3>
+                    <span class="hobby-icon">🎮</span>
+                    Gaming
+                </h3>
+                <p>Passionate about MMORPGs, especially World of Warcraft where I lead 25 man-raids. Also enjoy strategy games and FPS titles for team coordination and quick decision-making.</p>
+            </div>
+            <div class="hobby-item">
+                <h3>
+                    <span class="hobby-icon">🏃</span>
+                    Sports
+                </h3>
+                <p>Regular practice of fitness and running to maintain both physical and mental well-being. Enjoy the discipline and progression aspects of regular training.</p>
+            </div>
+            <div class="hobby-item">
+                <h3>
+                    <span class="hobby-icon">🌎</span>
+                    Travel
+                </h3>
+                <p>Love exploring new places and experiencing different cultures. Notable experience includes studying in San Francisco for six months, which broadened my global perspective.</p>
+            </div>
+            <div class="hobby-item">
+                <h3>
+                    <span class="hobby-icon">💻</span>
+                    Technology
+                </h3>
+                <p>Keep up with latest tech trends and enjoy working on personal coding projects. Particularly interested in software development and computer science innovations.</p>
+            </div>
+        </div>
+    </section>
 
     <footer>
         <p>&copy; 2024 Clement Gangnant Portfolio. All rights reserved.</p>
